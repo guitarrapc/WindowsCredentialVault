@@ -8,7 +8,7 @@
 .EXAMPLE
    Show-WindowsCredentialVaultConfig
 #>
-
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (

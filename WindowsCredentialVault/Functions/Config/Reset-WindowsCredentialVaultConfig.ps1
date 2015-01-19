@@ -9,6 +9,7 @@
    Reset-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (

@@ -10,7 +10,7 @@
    ConvertFrom-PasswordCredential -Credential $Credential
 #>
 
-    [OutputType([PSCredential])]
+    [OutputType([PSCredential[]])]
     [CmdletBinding()]
     param
     (

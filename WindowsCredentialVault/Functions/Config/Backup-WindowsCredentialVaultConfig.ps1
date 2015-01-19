@@ -9,6 +9,7 @@
    Backup-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (

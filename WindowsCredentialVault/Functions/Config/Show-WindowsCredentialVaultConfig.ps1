@@ -9,6 +9,7 @@
    Show-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([System.String[]])]
     [CmdletBinding()]
     param
     (

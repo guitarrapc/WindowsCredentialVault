@@ -10,7 +10,7 @@
    ConvertTo-PasswordCredential -Credential (Get-Credential) -ResourceName hoge
 #>
 
-    [OutputType([Windows.Security.Credentials.PasswordCredential])]
+    [OutputType([Windows.Security.Credentials.PasswordCredential[]])]
     [CmdletBinding()]
     param
     (

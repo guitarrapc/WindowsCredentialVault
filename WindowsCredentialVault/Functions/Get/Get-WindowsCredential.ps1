@@ -14,7 +14,7 @@
 .EXAMPLE
    Get-WindowsCredential -All
 #>
-    [OutputType([PSCredential])]
+    [OutputType([PSCredential[]])]
     [CmdletBinding(DefaultParameterSetName = "Specific")]
     param
     (

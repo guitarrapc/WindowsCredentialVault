@@ -9,6 +9,7 @@
    Backup-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (
@@ -47,6 +48,8 @@ function Edit-WindowsCredentialVaultConfig
    Edit-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
+    [CmdletBinding()]
     param
     (
         [parameter(mandatory = 0, position = 0)]
@@ -87,7 +90,7 @@ function Enable-WindowsCredentialVaultConfig
 .EXAMPLE
    Show-WindowsCredentialVaultConfig
 #>
-
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (
@@ -127,6 +130,7 @@ function Reset-WindowsCredentialVaultConfig
    Reset-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
     [CmdletBinding()]
     param
     (
@@ -159,6 +163,7 @@ function Show-WindowsCredentialVaultConfig
    Show-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([System.String[]])]
     [CmdletBinding()]
     param
     (
@@ -193,7 +198,7 @@ function ConvertFrom-PasswordCredential
    ConvertFrom-PasswordCredential -Credential $Credential
 #>
 
-    [OutputType([PSCredential])]
+    [OutputType([PSCredential[]])]
     [CmdletBinding()]
     param
     (
@@ -226,7 +231,7 @@ function ConvertTo-PasswordCredential
    ConvertTo-PasswordCredential -Credential (Get-Credential) -ResourceName hoge
 #>
 
-    [OutputType([Windows.Security.Credentials.PasswordCredential])]
+    [OutputType([Windows.Security.Credentials.PasswordCredential[]])]
     [CmdletBinding()]
     param
     (
@@ -265,7 +270,7 @@ function Get-WindowsCredential
 .EXAMPLE
    Get-WindowsCredential -All
 #>
-    [OutputType([PSCredential])]
+    [OutputType([PSCredential[]])]
     [CmdletBinding(DefaultParameterSetName = "Specific")]
     param
     (

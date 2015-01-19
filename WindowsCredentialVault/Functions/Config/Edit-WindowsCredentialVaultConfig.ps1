@@ -9,6 +9,8 @@
    Edit-WindowsCredentialVaultConfig
 #>
 
+    [OutputType([Void])]
+    [CmdletBinding()]
     param
     (
         [parameter(mandatory = 0, position = 0)]
