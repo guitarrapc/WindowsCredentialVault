@@ -21,8 +21,8 @@ Below sample code will save your Credential as hoge.
 Set-WindowsCredential -ResourceName hoge -Credential (Get-Credential)
 ```
 
-![](bin/SetPrompt.png)
-![](bin/SetCredential.png)
+![](Images/SetPrompt.png)
+![](Images/SetCredential.png)
 
 **Get Credential**
 
